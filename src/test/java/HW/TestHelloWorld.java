@@ -18,15 +18,14 @@ public class TestHelloWorld {
    @Test
    public void testHelloEmpty() 
    {
-      assertEquals(h.getName(),"");
-      assertEquals(h.getMessage(),"Hello!");
+      
+      assertEquals(h.printMessage(""),"Hello!");
    }
 	
    @Test
    public void testHelloWorld() 
    {
-      h.setName("World");
-      assertEquals(h.getName(),"World");
-      assertEquals(h.getMessage(),"Hello World!");
+      
+      assertEquals(h.printMessage("World"),"Hello World!");
    }
 }

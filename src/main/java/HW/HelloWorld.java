@@ -2,30 +2,25 @@ package HW;
 public class HelloWorld 
 {
 	
-   private String name = "";
-
-   public String getName() 
-   {
-      return name;
-   }
-
-   public String getMessage() 
+ 
+   public String printMessage(String name) 
    {
       if (name == "") 
       {
-    	 System.out.println("Hello!");
          return "Hello!";
       }
       else 
       {
-    	  System.out.println("Hello"+name+"!");
          return "Hello " + name + "!";
       }
    }
 
-   public void setName(String name) 
+   public static void main(String[] args)
    {
-      this.name = name;
+	   HelloWorld hw = new HelloWorld();
+	   System.out.println(hw.printMessage(""));
+	   System.out.println(hw.printMessage("World"));
+	   
    }
 		
 }
