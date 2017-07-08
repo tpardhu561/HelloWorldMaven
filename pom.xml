@@ -16,7 +16,7 @@
 	<configuration>
   	<archive>
     <manifest>
-	<mainClass>HW.AllTests</mainClass>
+	<mainClass>HW.HelloWorld</mainClass>
     </manifest>
   	</archive>
 	</configuration>
